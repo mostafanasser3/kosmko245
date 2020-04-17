@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const client = new Discord.Client();
 var prefix = "#";
 client.on('message', message => {
@@ -174,10 +174,12 @@ client.on('message', puz => {
 		  "قابيل",
 		  "الفيل",
 		  "العقل",
-		  
+        
+        
+        
+        
         ];
-        client.on('message', puz => {
-         if (fkk.content == "#سؤال") {
+        
         var x3 = Math.floor(Math.random()*x.length)
         puz.channel.send(`السؤال هو:  __**${x[x3]}**__
 لديك 20 ثانية للاجابة`).then(msg1=> {
